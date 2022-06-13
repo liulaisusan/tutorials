@@ -32,3 +32,14 @@ Follow the steps on [this page](https://learn.hashicorp.com/tutorials/terraform/
 - `terraform init`  
 - `terraform apply`  
 - `terraform destory`  
+
+## TASKS
+- [x] set google cloud
+    1. create new project and bind the billing account
+    2. enable Google Compute Engine
+    3. create a GCP service account
+- [x] finish the tutorial from terraform
+    1. check [the documentation](https://registry.terraform.io/providers/hashicorp/google/latest/docs) for GCP resources.
+    2. `terraform fmt` to  updates configurations in the current directory for readability and consistency.
+    3. `terraform validate` to make sure your configuration is syntactically valid and internally consistent.
+    4. `terraform.tfstate` stores the IDs and properties of the resources it manages in this file, so that it can update or destroy those resources going forward, use `terraform show` to show the state.

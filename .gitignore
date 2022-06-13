@@ -1,2 +1,7 @@
 .terraform*
 .DS_Store
+
+# crediential
+ss2022-awt-f6a0264b06b5.json
+*.tfstate
+*.tfstate.backup
