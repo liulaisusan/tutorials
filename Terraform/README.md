@@ -31,7 +31,8 @@ Follow the steps on [this page](https://learn.hashicorp.com/tutorials/terraform/
 ## Basic command
 - `terraform init`  
 - `terraform apply`  
-- `terraform destory`  
+- `terraform destory`
+- `terraform plan`  Generates a speculative execution plan, showing what actions Terraform would take to apply the current configuration. This command will not actually perform the planned actions.
 
 ## TASKS
 - [x] set google cloud
@@ -43,3 +44,9 @@ Follow the steps on [this page](https://learn.hashicorp.com/tutorials/terraform/
     2. `terraform fmt` to  updates configurations in the current directory for readability and consistency.
     3. `terraform validate` to make sure your configuration is syntactically valid and internally consistent.
     4. `terraform.tfstate` stores the IDs and properties of the resources it manages in this file, so that it can update or destroy those resources going forward, use `terraform show` to show the state.
+- [x] finish the tutorial about terraform variables
+    1. `variables.tf` to define variabels (can use default values)
+    2. `terraform.tfvars` to populate variables using values from a file
+- [x] finish the tutorial about terraform output query
+    1. `outputs.tf` defint the output values which will be printed on console and can be queried by `terraform output`.
+    2. first apply, then can query output.
