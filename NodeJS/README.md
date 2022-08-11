@@ -38,8 +38,15 @@ Run JS on server side and handle the request from website front-end.
 - [**file system**](https://nodejs.org/api/fs.html): [example](./node-crash-course/files.js)
 - [**streams and buffer**](https://nodesource.com/blog/understanding-streams-in-nodejs/): for large amounts of data [example](./node-crash-course/streams.js)
 - [**Server**](https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module#step-1-creating-a-basic-http-server): [example](./node-crash-course/server.js) not exactly the same.
+- [**npm**](https://www.npmjs.com/): package management, can search for packages
+  - [nodemon](https://www.npmjs.com/package/nodemon):automatically restarting the node application when file changes in the directory are detected.
+  - [lodash](https://lodash.com/)
+  - [express](http://expressjs.com/): easy routing, clean code etc. ([example](./node-crash-course/app.js))
 
 ### Tips
 
 - twice ctrl+c to exit node in terminal
 - run js file using `node xxx.js`
+- install package globally need `sudo npm install -g <package_name>`
+- install packages locally need `package.json` file by using `npm init`
+- install all the packages need `npm install`, it will install all the packages listed in `package.json`
