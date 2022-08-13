@@ -42,6 +42,10 @@ Run JS on server side and handle the request from website front-end.
   - [nodemon](https://www.npmjs.com/package/nodemon):automatically restarting the node application when file changes in the directory are detected.
   - [lodash](https://lodash.com/)
   - [express](http://expressjs.com/): easy routing, clean code etc. ([example](./node-crash-course/app.js))
+    - View engines (e.g. [ejs](https://ejs.co/):
+      - for dynamic html/data inject ([example](./node-crash-course/app.js))
+      - for partials templates ([example](./node-crash-course/views/partials/))
+      - add css ([example](./node-crash-course/views/partials/head.ejs))
 
 ### Tips
 
@@ -50,3 +54,8 @@ Run JS on server side and handle the request from website front-end.
 - install package globally need `sudo npm install -g <package_name>`
 - install packages locally need `package.json` file by using `npm init`
 - install all the packages need `npm install`, it will install all the packages listed in `package.json`
+
+### Related Courses
+
+- [**JavaScript course**](https://www.youtube.com/playlist?list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc)
+- [**HTML & CSS Course**](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
