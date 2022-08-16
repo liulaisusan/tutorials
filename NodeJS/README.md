@@ -31,6 +31,30 @@ Run JS on server side and handle the request from website front-end.
 - 404: not found
 - 500: internal server error
 
+### Middleware
+
+Code which runs (on the server) between getting a request and sending a response. e.g. `app.use()` or `app.get()`. The middleware will be fired sequentially until the end or the response is sent.  
+Examples:
+
+- Logger middleware to log details of every request
+- Authentication check middleware for protected routes
+- Middleware to parse JSON data from requests
+- Return 404 pages
+
+### MongoDB
+
+using collection to keep the data. Each collection can have only one type of data.
+
+- [mongoose](https://mongoosejs.com/)
+- Schema & Model : [example of schema and model](./node-crash-course/models/), [example in app.js](./node-crash-course/app.js)
+
+#### Tips
+
+- use `next()` to tell the programm run next middleware
+- third-party middleware
+  - [morgan](https://www.npmjs.com/package/morgan): for logger
+  - static middleware
+
 ### Crash course
 
 - [**global object**](https://www.geeksforgeeks.org/node-js-global-objects/#:~:text=server%2Dside%20scripting.-,Node.,without%20importing%20any%20particular%20module.)
