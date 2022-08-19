@@ -54,6 +54,14 @@ using collection to keep the data. Each collection can have only one type of dat
 - [mongoose](https://mongoosejs.com/)
 - Schema & Model : [example of schema and model](./node-crash-course/models/), [example in app.js](./node-crash-course/app.js)
 
+### MVC
+
+MVC stands for model, view, controller, is a way of structuring our code and files to keep code more modular, reusable and easier to read.
+
+- [model](./node-crash-course/models/blog.js): the customized data structre
+- [view](./node-crash-course/views/): the layout etc.
+- [controller](./node-crash-course/controllers/): forms the link between model and view
+
 #### Tips
 
 - use `next()` to tell the programm run next middleware
@@ -76,6 +84,7 @@ using collection to keep the data. Each collection can have only one type of dat
       - for dynamic html/data inject ([example](./node-crash-course/app.js))
       - for partials templates ([example](./node-crash-course/views/partials/))
       - add css ([example](./node-crash-course/views/partials/head.ejs))
+- [express router](https://expressjs.com/en/guide/routing.html): set similar path into one js file and export it ([example](./node-crash-course/app_with_router.js))
 
 ### Tips
 
