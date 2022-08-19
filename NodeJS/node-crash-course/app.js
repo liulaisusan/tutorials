@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 const { result } = require('lodash');
+const { render } = require('ejs');
 
 // express app
 const app = express();
@@ -23,6 +24,7 @@ app.set('views', 'views'); // default folder for all the views is 'views', can b
 
 // middleware & static files
 app.use(express.static('public')); // folder name which will be accessable from the browser
+app.use(express.urlencoded({ extended: true })); // automatic change the request to an object
 app.use(morgan('dev'));
 
 
@@ -69,6 +71,36 @@ app.get('/blogs', (req, res) => {
 app.get('/blogs/create', (req, res) => {
     res.render('create', { title: 'Create a new Blog' });
 })
+
+app.post('/blogs', (req, res) => {
+    const blog = new Blog(req.body);
+    blog.save()
+        .then((result) => {
+            res.redirect('/blogs');
+        })
+        .catch((err) => console.log(err));
+})
+
+app.get('/blogs/:id', (req, res) => { // use :id to make it a varibale
+    const id = req.params.id;
+    Blog.findById(id)
+        .then((result) => {
+            res.render('details', { blog: result, title: 'Blog details' });
+        })
+        .catch((err) => console.log(err));
+})
+
+app.delete('/blogs/:id', (req, res) => {
+    const id = req.params.id;
+    Blog.findByIdAndDelete(id)
+        .then((result) => {
+            // can't redirect because the req is from browser fetch
+            // can only send an object and let the front end to do the redirect
+            res.json({ redirect: '/blogs' })
+        })
+        .catch((err) => console.log(err));
+})
+
 // 404 page
 app.use((req, res) => {
     // res.status(404).sendFile('./views/404.html', { root: __dirname })

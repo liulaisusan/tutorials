@@ -24,6 +24,12 @@ Run JS on server side and handle the request from website front-end.
 
 #### Different types of http request
 
+- get : request to get a resource
+- post : request to create new data like a new blog
+- delete : request to delete data
+- put : request to update data
+- route parameters: the variable parts of the route that may change value
+
 #### [Status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
 - 200: ok
