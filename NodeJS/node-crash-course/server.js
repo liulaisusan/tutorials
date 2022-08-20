@@ -1,8 +1,18 @@
 const http = require('http');
 const fs = require('fs');
+const _ = require('lodash');
 
 const server = http.createServer((req, res) => {
-    console.log(req.url, req.method); // url is what comes after the domain name
+    // lodash
+    const num = _.random(0, 20);
+    console.log(num);
+
+    const greet = _.once(() => { //every request only fire greet() once, even the code said twice
+        console.log('hello');
+    });
+
+    greet();
+
 
     // BASIC ROUTING
     let path = './views/';
