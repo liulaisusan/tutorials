@@ -65,6 +65,47 @@ li {
 - Margin & Padding
 - Default browser sytles
 
+## Course 5
+
+- class: use `.classname`
+- tag with class: `tag.class`
+- id: use `#id`. Not very common use id for css, because all the IDs need to be unique
+- descenden selector:`parent child`
+- attribute selector:`tag[attribute]` / `tag[attribute="value"]`
+
+  - "\*=" : include the given patten
+  - "$=" : ends with the given patten
+
+### [The Cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
+
+- HTML elements can inherit CSS properties that are applied to their parents
+
+```html
+<div class="error">
+  <p>I am an error</p>
+</div>
+```
+
+```css
+div {
+  color: red;
+}
+/* the p tag in div is also red */
+```
+
+- not all the style are inherited, like border, margin. To inherit, need at the children specific say inherit.
+
+## Course 6
+
+**HTML Semantic Tags**
+
+- \<main\>: For the main content of a webpage, unique to that page
+- \<section\>: Defines a certain section of a webpage (e.g. blog list, contact info)
+- \<article\>: Defines a bit of content which makes up an article (e.g. a blog post)
+- \<aside\>: Defines some content related to something else (e.g. similar blogs)
+- \<header\>: For the header of a website - contains the nav, title etc
+- \<footer\>: For the footer of a website
+
 ## Tricks
 
 - hold `option` button and click where you want to add same content, to change multiple places at the same time
