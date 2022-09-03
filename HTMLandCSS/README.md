@@ -106,6 +106,28 @@ div {
 - \<header\>: For the header of a website - contains the nav, title etc
 - \<footer\>: For the footer of a website
 
+## Course 7
+
+**Chrome dev tool**
+
+## Course 8
+
+**[Position & Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/position)**
+
+Position
+
+- static: default
+- relative: shift the element to somewhere relattive to its original position
+- fixed: fixed the element on the view point (window)
+- absolute: put element absolutly relative to its closest parent
+- sticky: a mixture of static and fixed
+
+Layout
+
+- z-index: default is 0, higher than fronter
+
+---
+
 ## Tricks
 
 - hold `option` button and click where you want to add same content, to change multiple places at the same time
