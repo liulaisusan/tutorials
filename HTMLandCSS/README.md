@@ -126,6 +126,25 @@ Layout
 
 - z-index: default is 0, higher than fronter
 
+## Course 9
+
+**[Pseudo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)**
+
+- Style elements when they're in a particular state
+  - hover, focus, first child of a parent, tagging at the end of a selector with a `:`
+
+**[Pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)**
+
+- allows to inject dynamic content or inside on a content, ues with `::`
+
+## Course 10
+
+### [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+
+- Media Queries: Tell the browser how to style an element at particular viewport dimesions
+- [Viewport meta tag](https://www.w3schools.com/css/css_rwd_viewport.asp): Tells the browser what width the viewport should be
+- Responsive images: Only load smaller images for mobile devices
+
 ---
 
 ## Tricks
