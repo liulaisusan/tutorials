@@ -1,0 +1,65 @@
+/* span {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+} */
+
+/* div {
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 20px;
+} */
+/* 
+p.error{
+    color: red;
+}
+
+p.success.feedback{
+    border: 1px dashed #44cc44;
+}
+
+p.success{
+    color: #44cc44;
+} */
+
+/* div#content{
+    background-color: #ebebeb;
+    padding: 20px;
+} */
+
+/* div .error{
+    color: purple;
+} */
+
+/* a[href="https://www.thenetninja.co.uk"]{
+    background-color: #3dd31d;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a[href*="google"]{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
+
+div{
+    color: lightcoral;
+    border: 1px solid grey;
+    margin: 40px;
+    font-weight: bold;
+}
+
+div p{
+    border: inherit;
+    margin: inherit;
+    color: crimson;
+}
+
+p{
+    color: orange;
+}
