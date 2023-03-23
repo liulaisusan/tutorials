@@ -5,3 +5,6 @@
 ss2022-awt-f6a0264b06b5.json
 *.tfstate
 *.tfstate.backup
+
+# local vs setting
+playaround-code-workspace.code-workspace
